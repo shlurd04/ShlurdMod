@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "shlurdmod",
+	"version": "${version}",
+	"name": "Shlurd Mod",
+	"description": "The Shlurd Mod!",
+	"authors": [
+		"Szilard"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/shlurdmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.shlurd.shlurdmod.ShlurdMod"
+		],
+		"fabric-datagen": [
+			"net.shlurd.shlurdmod.ShlurdModDataGenerator"
+		],
+		"client" : [
+			"net.shlurd.shlurdmod.ShlurdModClient"
+		]
+	},
+	"mixins": [
+		"shlurdmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.3",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
